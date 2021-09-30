@@ -861,20 +861,20 @@
 					$.ajax({
         	  type: "POST",
 						url : '<?php echo base_url('General/surveyQuestions') ?>',
-      	    data: {id:id},
-        	  dataType: "json",
-        	  success: function(data) {
-							table = $('#tableResponsesLists').DataTable({
-								"autoWidth": true,
-        				dom: 'Bfrtip',
-        				buttons: [
-        				  'copyHtml5',
-        				  'excelHtml5',
-        				],
-								columns: data,
-								"pageLength": 25 
-							});
-							$('#tableResponsesLists').val('1')
+						data: {id:id},
+						dataType: "json",
+						success: function(data) {
+						table = $('#tableResponsesLists').DataTable({
+							"autoWidth": true,
+							dom: 'Bfrtip',
+							buttons: [
+							'copyHtml5',
+							'excelHtml5',
+							],
+							columns: data,
+							"pageLength": 25 
+						});
+						$('#tableResponsesLists').val('1')
 
 							$.ajax({
 								type: "POST",

@@ -878,6 +878,7 @@ $(document).ready(function() {
         }
     } );
 
+
     // var chart = AmCharts.makeChart("capaehs_chart", {
     //     "theme": "none",
     //     "type": "serial",
@@ -923,7 +924,11 @@ $(document).ready(function() {
     //         }
 
     // });
-});
 
+
+
+
+
+});
 
 </script>

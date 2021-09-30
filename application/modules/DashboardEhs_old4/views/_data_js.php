@@ -176,14 +176,14 @@
           low      = data.pieValue[0]['low'] / total * 100    
           veryLow  = data.pieValue[0]['very_low'] / total * 100   
 
-          setPie2(filter,veryHigh,high,moderate,low,veryLow)
+          setPie2(filter,veryHigh,high,moderate,low,veryLow,dateStart,dateFinish)
         }
       },error: function() {
       }
     });
   }
     
-  function setPie2(filter,veryHigh,high,moderate,low,veryLow){
+  function setPie2(filter,veryHigh,high,moderate,low,veryLow,dateStart,dateFinish){
     listStatus2 = {'Very High':'veryHigh','High':'high','Moderate':'moderate','Low':'low','Very Low':'veryLow'}
 
     var c3DonutChart = c3.generate({

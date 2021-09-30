@@ -48,6 +48,10 @@
         <script src="<?php echo base_url(); ?>assets/inspinia/js/plugins/sweetalert/sweetalert.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js" type="text/javascript" ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+        <!-- Resources -->
+        <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -57,7 +61,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
 
-            $('#dateStart, #dateFinish').datepicker({
+            $('#startDate, #endDate').datepicker({
               // minViewMode: 1,
               keyboardNavigation: false,
               forceParse: false,
@@ -66,8 +70,7 @@
               endDate: 'd',
               format: "yyyy-mm-dd"
             });
-            
-            $('#dateStart2, #dateFinish2').datepicker({
+            $('#startDates, #endDates').datepicker({
               // minViewMode: 1,
               keyboardNavigation: false,
               forceParse: false,
@@ -75,25 +78,6 @@
               todayHighlight: true,
               endDate: 'd',
               format: "yyyy-mm-dd"
-            });
-
-            // $('#dateStart2, #dateFinish2').datepicker({
-            //   // minViewMode: 1,
-            //   // keyboardNavigation: false,
-            //   // forceParse: false,
-            //   // autoclose: true,
-            //   // todayHighlight: true,
-            //   endDate: 'mm',
-            //   format: "mm-yyyy",
-            //   startView: "months", 
-            //   minViewMode: "months"
-            // });
-
-            $('#tahun_budget').datepicker({
-                format: "yyyy",
-                viewMode: "years", 
-                minViewMode: "years",
-                endDate : 'y'
             });
         </script>
     </body>

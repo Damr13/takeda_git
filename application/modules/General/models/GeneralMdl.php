@@ -138,11 +138,10 @@ class GeneralMdl extends CI_Model {
 
 	// GET ALL RESPONSES BASED ON SURVEY --ir
 	function surveyResponses($id, $ess = ''){
-	    $todayS = date("d-m-Y");
 		if($ess) $select = 'SELECT a.idResponse';
 		else $select = 'SELECT a.*';
 		$leftJoin = "LEFT JOIN $this->tableSurveys b ON a.survey = b.id";
-		$where = "WHERE a.survey = '$id' and DATE_FORMAT(a.timestamps, '%d-%m-%Y') = '".$todayS."' ";
+		$where = "WHERE a.survey = '$id' and DATE_FORMAT(a.timestamps, '%d-%m-%Y') = '25-06-2021' ";
 		$q = "$select
 			FROM $this->tableResp a 
 			$leftJoin 

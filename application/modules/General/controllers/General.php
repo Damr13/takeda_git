@@ -75,6 +75,8 @@ class General extends CI_Controller {
 			$ArrayAns["Date Responses"] = $ansTime;
 			$ArrayResp[$idResponse] = $ArrayAns;
 			// var_dump($a++);
+			// $a++;
+			// if($a >= 3) break;
 		}
 
 		// print_r($ArrayResp);

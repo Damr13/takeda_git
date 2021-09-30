@@ -27,7 +27,7 @@ class DashboardModelEhs extends CI_Model{
     }
     
     	
-    public function getPieValue($col, $start,$finish){
+    public function getPieValue($col,$dateStart,$datefinish){
         $q = "SELECT
 	( SELECT count( judgement ) FROM screening WHERE judgement = 'VERY HIGH'   and category='$col') very_high,
 	( SELECT count( judgement ) FROM screening WHERE judgement = 'HIGH' and category='$col' ) high,

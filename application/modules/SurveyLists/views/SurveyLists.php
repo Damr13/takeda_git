@@ -84,6 +84,7 @@
       <!-- CARD FOR ALL PROCESS --ir -->
       <div class="col-md-12" id="tableResponses">
         <div class="card">
+          
           <div class="card-body">
             <!-- TABLE SURVEY RESPONSES LISTS-->
             <div class="table-scroll table-responsive" style="padding: 0 40px 0 40px">

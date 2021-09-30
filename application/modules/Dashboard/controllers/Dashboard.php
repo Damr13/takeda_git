@@ -102,7 +102,7 @@ class Dashboard extends CI_Controller {
 			'run_hour' 							=> $this->ribuan2($run_hour),
 			'machine' 							=> $machineLists,
 			'tahun'									=> $tahun
-		 );
+		);
 		$this->load->view('Dashboard/templates/Header');
 		$this->template->load('templateDashboard','Dashboard',$data);
 		$this->load->view('Dashboard/templates/Footer');
@@ -353,8 +353,8 @@ class Dashboard extends CI_Controller {
 
 	public function pm_cal(){
 	    $periode 	= $this->input->post('periode');
-			$type 		= $this->input->post('type');
-			$checkBy	= $this->input->post('checkBy');
+		$type 		= $this->input->post('type');
+		$checkBy	= $this->input->post('checkBy');
 	    $tahun 		= date("Y");
 
 	    $total = 0;
